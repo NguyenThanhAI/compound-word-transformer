@@ -36,6 +36,7 @@ def get_args():
 
     parser.add_argument("--model_dir", type=str, default=None)
     parser.add_argument("--path_dictionary", type=str, default=None)
+    parser.add_argument("--path_gendir", type=str, default=None)
     parser.add_argument("--d_model", type=int, default=512)
     parser.add_argument("--n_layer", type=int, default=12)
     parser.add_argument("--n_head", type=int, default=8)
