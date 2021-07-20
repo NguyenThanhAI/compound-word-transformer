@@ -489,6 +489,7 @@ def generate(model_dir, path_dictionary, path_gendir, d_model, n_layer, n_head, 
 
             if name.endswith("_params") and ext == "pt":
                 path_saved_ckpt = os.path.join(dirs, file)
+                print("path_saved_ckpt: {}".format(path_saved_ckpt))
                 break
         break
 
