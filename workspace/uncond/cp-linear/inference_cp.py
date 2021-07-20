@@ -486,8 +486,7 @@ def generate(model_dir, path_dictionary, path_gendir, d_model, n_layer, n_head, 
     for dirs, _, files in os.walk(model_dir):
         for file in files:
             name, ext = os.path.splitext(file)
-            print("name: {}, ext: {}".format(name, ext))
-            if name.endswith("_params") and ext == "pt":
+            if name.endswith("_params") and ext == ".pt":
                 path_saved_ckpt = os.path.join(dirs, file)
                 print("path_saved_ckpt: {}".format(path_saved_ckpt))
                 break
